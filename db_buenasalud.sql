@@ -14,3 +14,11 @@ CREATE TABLE paciente (
    nss varchar(255) NOT NULL,
    PRIMARY KEY (`inscripcion`)
  ) 
+
+ -- Tabla departamento
+
+CREATE TABLE departamento (
+   nro_Departamento int NOT NULL AUTO_INCREMENT,
+   dpt_Nombre varchar(100) UNIQUE NOT NULL,
+   PRIMARY KEY (nro_Departamento)
+ ) 

@@ -40,4 +40,19 @@ CREATE TABLE empleado (
  ) 
 
 
- 
+ -- Insertar datos en las tablas
+
+
+-- Insertar datos en la tabla departamento
+INSERT INTO departamento VALUES 
+(1,'HEMATOLOGIA'),(2,'GINECOLOGIA'),
+(3,'PEDIATRIA'),(4,'PSIQUIATRIA'),
+(5,'NEUROLOGIA'),(6,'REHABILITACION'),
+(7,'CUIDADOS INTENSIVOS'),(8,'UNIDAD DE DIALISIS'),
+(9,'RADIOLOGIA'),(10,'LABORATORIO'),
+(11,'TOPICO'),(12,'QUIROFANO'),
+(13,'MATERNIDAD'),(14,'ODONTOLOGIA'),
+(15,'FARMACIA'),(16,'UROLOGIA'),
+(17,'OFTAMOLOGIA'),(18,'URGENCIAS'),
+(19,'LIMPIEZA'),(20,'SEGURIDAD'),
+(21,'PRUEBA'),(22,'sala espera');

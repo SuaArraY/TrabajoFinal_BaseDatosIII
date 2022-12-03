@@ -22,3 +22,22 @@ CREATE TABLE departamento (
    dpt_Nombre varchar(100) UNIQUE NOT NULL,
    PRIMARY KEY (nro_Departamento)
  ) 
+
+
+-- tabla empleado
+CREATE TABLE empleado (
+   emp_no int NOT NULL AUTO_INCREMENT,
+   apellido varchar(255) NOT NULL,
+   oficio varchar(255) NOT NULL,
+   direccion varchar(255) NULL,
+   fecha_nacimiento date NOT NULL,
+   fecha_alt date NULL,
+   salario double NOT NULL,
+   comision double  NULL,
+   dept_no int NOT NULL,
+   PRIMARY KEY (emp_no),
+   FOREIGN KEY (dept_no) REFERENCES departamento (nro_Departamento)
+ ) 
+
+
+ 

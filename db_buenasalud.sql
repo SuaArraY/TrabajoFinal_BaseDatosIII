@@ -29,7 +29,7 @@ CREATE TABLE `departamento` (
   `dpt_Nombre` varchar(100) NOT NULL,
   PRIMARY KEY (`nro_Departamento`),
   UNIQUE KEY `dpt_Nombre_UNIQUE` (`dpt_Nombre`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `departamento` (
 
 LOCK TABLES `departamento` WRITE;
 /*!40000 ALTER TABLE `departamento` DISABLE KEYS */;
-INSERT INTO `departamento` VALUES (7,'CUIDADOS INTENSIVOS'),(15,'FARMACIA'),(2,'GINECOLOGIA'),(1,'HEMATOLOGIA'),(10,'LABORATORIO'),(19,'LIMPIEZA'),(13,'MATERNIDAD'),(5,'NEUROLOGIA'),(14,'ODONTOLOGIA'),(17,'OFTAMOLOGIA'),(3,'PEDIATRIA'),(26,'PRUEBA'),(4,'PSIQUIATRIA'),(12,'QUIROFANO'),(9,'RADIOLOGIA'),(6,'REHABILITACION'),(30,'sala espera'),(20,'SEGURIDAD'),(31,'servicios higuienicos'),(11,'TOPICO'),(8,'UNIDAD DE DIALISIS'),(18,'URGENCIAS'),(16,'UROLOGIA');
+INSERT INTO `departamento` VALUES (1,'HEMATOLOGIA'),(2,'GINECOLOGIA'),(3,'PEDIATRIA'),(4,'PSIQUIATRIA'),(5,'NEUROLOGIA'),(6,'REHABILITACION'),(7,'CUIDADOS INTENSIVOS'),(8,'UNIDAD DE DIALISIS'),(9,'RADIOLOGIA'),(10,'LABORATORIO'),(11,'TOPICO'),(12,'QUIROFANO'),(13,'MATERNIDAD'),(14,'ODONTOLOGIA'),(15,'FARMACIA'),(16,'UROLOGIA'),(17,'OFTAMOLOGIA'),(18,'URGENCIAS'),(19,'LIMPIEZA'),(20,'SEGURIDAD'),(21,'PRUEBA'),(22,'sala espera'),(23,'servicios higuienicos');
 /*!40000 ALTER TABLE `departamento` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -63,7 +63,7 @@ CREATE TABLE `empleado` (
   KEY `IND_CLIE_CODI` (`emp_no`) USING BTREE,
   KEY `dept_no` (`dept_no`),
   CONSTRAINT `empleado_ibfk_1` FOREIGN KEY (`dept_no`) REFERENCES `departamento` (`nro_Departamento`)
-) ENGINE=InnoDB AUTO_INCREMENT=163408 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=514 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
